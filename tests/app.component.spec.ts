@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { AppRootComponent } from '../app/app.component';
+import { AppRootComponent } from '../features/app/app.component';
 
 describe('app root', () => {
     let fixture, comp;
