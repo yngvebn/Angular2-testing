@@ -10,11 +10,6 @@ export class App2RootComponent implements OnInit {
     constructor(public greetingService: SharedService, private ref: ChangeDetectorRef) {
 
     }
-
-    @HostListener('window:sharedGreeting', ['$event'])
-    fromEvent($event){
-        console.log('from event', $event);
-    }
     
     ngOnInit() {
         this.greetingService.greetingChanged.subscribe(str => {

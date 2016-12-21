@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-var port = process.env.PORT || 80;        // set our port
+var port = process.env.PORT || 8180;        // set our port
 
 var staticRoot = __dirname;  
 app.use(express.static(staticRoot));

@@ -13,6 +13,7 @@ export class AppRootComponent {
     }
 
     changeText() {
-        this.greetingService.setGreeting('Whats up one?');
+        let rand = Math.random();
+        this.greetingService.setGreeting('Whats up one?'+rand);
     }
 }
